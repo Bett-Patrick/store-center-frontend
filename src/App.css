@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  margin: 0 ;
+}
+
+body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.dark #root {
+  background-color: #000; /* Change background color to dark */
+  color: #fff; /* Change text color to white */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/* Bett css */
+
+
+/* Main page */
+.img-container{
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  margin-bottom: 50px;
+}
+.warehouse-img{
+  height: 100%;
+  width: 100%;
+}
+
+.our-services{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  place-items: center;
+  width: 600px;
+  height: 190px;
+  border: 2px rgb(90, 87, 87) solid;
+  overflow: hidden;
+  margin: auto;
+  /* background-color: #8a8a8a; */
+}
+
+a .active {
+  color: red;
+
+}
+
+/* table styles */
+/* table{
+  width: 100%;
+}
+
+th{
+  font-weight: bold;
+  border: 1px solid #000;
+}
+
+td{
+  border: 1px solid #000;
+}
+
+table, th, tr, td{
+  border-collapse: collapse;
+}
+
+table tr:nth-child(even){
+  background-color: #dfdfdf;
+} */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.delivery-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://img.freepik.com/premium-photo/truck-asphalt-road-city_221128-17216.jpg?w=996');
+  background-size: cover;
+  background-position: center;
+}
+
+.delivery-form {
+  background: rgba(228, 224, 224, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(228, 17, 17, 0.1);
+}
